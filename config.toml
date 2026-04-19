@@ -1,10 +1,24 @@
 model = "gpt-5.4-mini"
 model_reasoning_effort = "high"
-[projects.'C:\Users\AA\.codex']
-trust_level = "trusted"
+personality = "pragmatic"
 
 [windows]
 sandbox = "elevated"
 
 [plugins."github@openai-curated"]
 enabled = true
+
+[mcp_servers.desktop-commander]
+enabled = true
+command = "pnpm"
+args = ["dlx", "@wonderwhy-er/desktop-commander@latest"]
+
+[mcp_servers.context7]
+command = "pnpm"
+args = ["dlx", "@upstash/context7-mcp@latest"]
+startup_timeout_ms = 20_000
+
+
+
+[projects.'C:\Users\AA\.codex']
+trust_level = "trusted"
