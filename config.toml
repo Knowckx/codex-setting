@@ -30,6 +30,9 @@ approval_mode = "approve"
 [mcp_servers.desktop-commander.tools.edit_block]
 approval_mode = "approve"
 
+[mcp_servers.desktop-commander.tools.set_config_value]
+approval_mode = "approve"
+
 
 
 [projects.'C:\Users\AA\.codex']
