@@ -1,0 +1,5 @@
+# Ignore everything by default, then opt back in to the tracked files.
+*
+!.gitignore
+!AGENTS.md
+!config.toml
