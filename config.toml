@@ -8,17 +8,28 @@ sandbox = "elevated"
 [plugins."github@openai-curated"]
 enabled = true
 
-[mcp_servers.desktop-commander]
-enabled = true
-command = "pnpm"
-args = ["dlx", "@wonderwhy-er/desktop-commander@latest"]
-
 [mcp_servers.context7]
 command = "pnpm"
 args = ["dlx", "@upstash/context7-mcp@latest"]
 startup_timeout_ms = 20_000
 
 
+[mcp_servers.desktop-commander]
+enabled = true
+command = "pnpm"
+args = ["dlx", "@wonderwhy-er/desktop-commander@latest"]
+env = { PYTHONUTF8 = "1" }
+
+[mcp_servers.desktop-commander.tools.start_process]
+approval_mode = "approve"
+
+[mcp_servers.desktop-commander.tools.edit_block]
+approval_mode = "approve"
+
+
 
 [projects.'C:\Users\AA\.codex']
+trust_level = "trusted"
+
+[projects.'C:\Users\AA\Documents\Codex\2026-04-19-shell-pythonutf8-1-2']
 trust_level = "trusted"
