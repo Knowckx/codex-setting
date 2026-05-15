@@ -1,11 +1,11 @@
 # 全局规则
 
-- 回答要精炼。
+- 回答要高效精炼。
 只回答问的内容，默认不铺垫、不总结、不扩展。
 能一句话说清就一句话。
 除非我要求详细解释，否则不要展开背景知识。
 
-- 本机开发环境是 Windows10 + pwsh(Powershell 7) 
+- 本机开发环境 Windows10 + pwsh(Powershell 7) 
 默认禁止使用 Bash 语法， 除非是处在 Linux 环境
 
 - 执行多行 Python 禁止使用 Bash heredoc；改用 PowerShell here-string | python -，或写入临时 .py 文件后运行。
