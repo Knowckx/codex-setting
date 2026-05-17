@@ -1,4 +1,4 @@
-model = "gpt-5.5"
+model = "gpt-5.4-mini"
 model_reasoning_effort = "high"
 personality = "pragmatic"
 approval_policy = "on-failure"
@@ -10,6 +10,12 @@ shell_tool = false
 sandbox = "elevated"
 
 [plugins."github@openai-curated"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
 enabled = true
 
 [mcp_servers.context7]
@@ -64,6 +70,6 @@ trust_level = "trusted"
 approval_mode = "approve"
 
 [marketplaces.openai-bundled]
-last_updated = "2026-05-15T08:35:21Z"
+last_updated = "2026-05-16T16:24:12Z"
 source_type = "local"
 source = '\\?\C:\Users\AA\.codex\.tmp\bundled-marketplaces\openai-bundled'
